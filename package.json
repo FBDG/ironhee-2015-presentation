@@ -1,5 +1,9 @@
 {
   "private": true,
+  "scripts": {
+    "init": "bash scripts/init.sh",
+    "publish": "bash scripts/publish.sh"
+  },
   "dependencies": {
     "reveal.js": "^3.1.0"
   }

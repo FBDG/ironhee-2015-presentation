@@ -8,16 +8,16 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucjsent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-		<link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="node_modules/reveal.js/css/theme/beige.css" id="theme">
-		<link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+		<link rel="stylesheet" href="vendor/css/reveal.css">
+		<link rel="stylesheet" href="vendor/css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="vendor/lib/css/zenburn.css">
 		<script>
 			var link = document.createElement('link');
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
 			link.href = window.location.search.match(/print-pdf/gi) ?
-				'node_modules/reveal.js/css/print/pdf.css' :
-				'node_modules/reveal.js/css/print/paper.css';
+				'vendor/css/print/pdf.css' :
+				'vendor/css/print/paper.css';
 			document.getElementsByTagName('head')[0].appendChild(link);
 		</script>
 		<!--[if lt IE 9]>
@@ -40,25 +40,25 @@
 						<h2>Ediket</h2>
 						<img
 							width="800"
-							data-src="img/ediket-1.png"
+							data-src="static/img/ediket-1.png"
 						>
 					</section>
 					<section>
 						<img
 							width="800"
-							data-src="img/ediket-2.png"
+							data-src="static/img/ediket-2.png"
 						>
 					</section>
 					<section>
 						<img
 							width="800"
-							data-src="img/ediket-3.png"
+							data-src="static/img/ediket-3.png"
 						>
 					</section>
 					<section>
 						<img
 							width="800"
-							data-src="img/ediket-4.png"
+							data-src="static/img/ediket-4.png"
 						>
 					</section>
 				</section>
@@ -107,37 +107,37 @@
 					<section>
 						<img
 							width="200"
-							src="img/backbone.png"
+							src="static/img/backbone.png"
 							alt="backbone"
 						/>
 						<img
 							width="200"
-							src="img/marionette.png"
+							src="static/img/marionette.png"
 							alt="marionette"
 						/>
 						<img
 							width="200"
-							src="img/grunt.jpg"
+							src="static/img/grunt.jpg"
 							alt="grunt"
 						/>
 						<img
 							width="200"
-							src="img/requirejs.png"
+							src="static/img/requirejs.png"
 							alt="requirejs"
 						/>
 						<img
 							width="200"
-							src="img/flask.jpg"
+							src="static/img/flask.jpg"
 							alt="flask"
 						/>
 						<img
 							width="200"
-							src="img/jinja2.png"
+							src="static/img/jinja2.png"
 							alt="jinja2"
 						/>
 						<img
 							width="200"
-							src="img/python-babel.png"
+							src="static/img/python-babel.png"
 							alt="python-babel"
 						/>
 					</section>
@@ -231,42 +231,42 @@
 					<section>
 						<img
 							width="200"
-							src="img/flux.png"
+							src="static/img/flux.png"
 							alt="flux"
 						/>
 						<img
 							width="200"
-							src="img/babel.png"
+							src="static/img/babel.png"
 							alt="babel"
 						/>
 						<img
 							width="200"
-							src="img/webpack.png"
+							src="static/img/webpack.png"
 							alt="webpack"
 						/>
 						<img
 							width="200"
-							src="img/react-intl.png"
+							src="static/img/react-intl.png"
 							alt="react-intl"
 						/>
 						<img
 							width="400"
-							src="img/react.png"
+							src="static/img/react.png"
 							alt="react"
 						/>
 						<img
 							width="400"
-							src="img/nunjucks.png"
+							src="static/img/nunjucks.png"
 							alt="nunjucks"
 						/>
 						<img
 							width="400"
-							src="img/react-router.png"
+							src="static/img/react-router.png"
 							alt="react-router"
 						/>
 						<img
 							width="400"
-							src="img/react-starter-kit.png"
+							src="static/img/react-starter-kit.png"
 							alt="react-starter-kit"
 						/>
 					</section>
@@ -298,8 +298,8 @@
 			</div>
 		</div>
 
-		<script src="node_modules/reveal.js/lib/js/head.min.js"></script>
-		<script src="node_modules/reveal.js/js/reveal.js"></script>
+		<script src="vendor/lib/js/head.min.js"></script>
+		<script src="vendor/js/reveal.js"></script>
 		<script>
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -312,29 +312,29 @@
 				// Optional reveal.js plugins
 				dependencies: [
 					{
-						src: 'node_modules/reveal.js/lib/js/classList.js',
+						src: 'vendor/lib/js/classList.js',
 						condition: function() { return !document.body.classList; }
 					},
 					{
-						src: 'node_modules/reveal.js/plugin/markdown/marked.js',
+						src: 'vendor/plugin/markdown/marked.js',
 						condition: function() { return !!document.querySelector( '[data-markdown]' ); }
 					},
 					{
-						src: 'node_modules/reveal.js/plugin/markdown/markdown.js',
+						src: 'vendor/plugin/markdown/markdown.js',
 						condition: function() { return !!document.querySelector( '[data-markdown]' ); }
 					},
 					{
-						src: 'node_modules/reveal.js/plugin/highlight/highlight.js',
+						src: 'vendor/plugin/highlight/highlight.js',
 						async: true,
 						condition: function() { return !!document.querySelector( 'pre code' ); },
 						callback: function() { hljs.initHighlightingOnLoad(); }
 					},
 					{
-						src: 'node_modules/reveal.js/plugin/zoom-js/zoom.js',
+						src: 'vendor/plugin/zoom-js/zoom.js',
 						async: true
 					},
 					{
-						src: 'node_modules/reveal.js/plugin/notes/notes.js',
+						src: 'vendor/plugin/notes/notes.js',
 						async: true
 					}
 				]
