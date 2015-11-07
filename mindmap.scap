@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ScappleDocument Version="1.1" ID="602679EC-3696-4690-A01F-8480D11B379E">
+    <Notes>
+        <Note ID="0" FontSize="17.0" Position="1860.142314,276.106419" Width="223.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.331867 0.609932 0.356197</Border>
+                <Fill>0.790123 0.882328 0.80198</Fill>
+            </Appearance>
+            <String>React + Redux 사용사례 발표
+FBDB - 2015 Meetup</String>
+            <ConnectedNoteIDs>1, 4, 7</ConnectedNoteIDs>
+        </Note>
+        <Note ID="1" FontSize="14.0" Position="1686.187048,224.746293" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>발표 목적</String>
+            <ConnectedNoteIDs>0, 2</ConnectedNoteIDs>
+        </Note>
+        <Note ID="2" FontSize="12.0" Position="1555.311316,149.499222" Width="50.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>정보공유</String>
+            <ConnectedNoteIDs>1</ConnectedNoteIDs>
+        </Note>
+        <Note ID="4" FontSize="14.0" Position="2124.19657,231.511674" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>발표 대상</String>
+            <ConnectedNoteIDs>0, 5</ConnectedNoteIDs>
+        </Note>
+        <Note ID="5" FontSize="12.0" Position="2175.060583,155.899288" Width="160.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>React  사용 경험이 있는 개발자</String>
+            <ConnectedNoteIDs>4</ConnectedNoteIDs>
+        </Note>
+        <Note ID="6" FontSize="12.0" Position="1463.672313,604.983263" Width="109.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>실제 프로젝트에 어떤 식으로 적용했는가 </String>
+            <ConnectedNoteIDs>9, 14-15</ConnectedNoteIDs>
+        </Note>
+        <Note ID="7" FontSize="14.0" Position="1920.931377,495.8447" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>발표 내용</String>
+            <ConnectedNoteIDs>0, 13-14</ConnectedNoteIDs>
+        </Note>
+        <Note ID="8" FontSize="12.0" Position="2278.93751,581.185532" Width="95.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>결과적으로 어떤 형태가 되었는가</String>
+            <ConnectedNoteIDs>10-13</ConnectedNoteIDs>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="969.913007,796.818834" Width="129.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>문제는 무엇이었고, 
+어떤 해결책을 선택했는가</String>
+            <ConnectedNoteIDs>6, 31, 33-35, 37, 44, 50, 55, 60, 64</ConnectedNoteIDs>
+        </Note>
+        <Note ID="10" FontSize="12.0" Position="2097.96876,708.009751" Width="113.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>react-starter-kit 소개</String>
+            <ConnectedNoteIDs>8</ConnectedNoteIDs>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="2236.195322,712.185532" Width="180.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>ironhee-frontend-boilerplate 소개</String>
+            <ConnectedNoteIDs>8</ConnectedNoteIDs>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="2437.253916,709.529282" Width="190.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>실제 프론트엔드 구조 간략하게 소개</String>
+            <ConnectedNoteIDs>8</ConnectedNoteIDs>
+        </Note>
+        <Note ID="13" FontSize="12.0" Position="2169.96876,527.009751" Width="33.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>20%</String>
+            <ConnectedNoteIDs>7-8</ConnectedNoteIDs>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="1688.845258,543.066953" Width="33.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>80%</String>
+            <ConnectedNoteIDs>6-7</ConnectedNoteIDs>
+        </Note>
+        <Note ID="15" FontSize="12.0" Position="1763.830354,706.46572" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>다른 팀원들을 (대표, 마케터, CTO 등) 어떤식으로 설득했는가</String>
+            <ConnectedNoteIDs>6</ConnectedNoteIDs>
+        </Note>
+        <Note ID="18" FontSize="12.0" Position="908.954491,1099.126912" Width="141.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Backbone + Marionette</String>
+            <ConnectedNoteIDs>29, 34</ConnectedNoteIDs>
+            <PointsToNoteIDs>29</PointsToNoteIDs>
+        </Note>
+        <Note ID="19" FontSize="12.0" Position="1604.325357,1102.982411" Width="63.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Require.js</String>
+            <ConnectedNoteIDs>22, 31</ConnectedNoteIDs>
+            <PointsToNoteIDs>22</PointsToNoteIDs>
+        </Note>
+        <Note ID="20" FontSize="12.0" Position="1124.864029,1105.890459" Width="160.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>server-side template (Jinja2)</String>
+            <ConnectedNoteIDs>25, 33</ConnectedNoteIDs>
+            <PointsToNoteIDs>25</PointsToNoteIDs>
+        </Note>
+        <Note ID="22" FontSize="12.0" Position="1604.277738,1248.580625" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Browserify</String>
+            <ConnectedNoteIDs>19, 23</ConnectedNoteIDs>
+            <PointsToNoteIDs>23</PointsToNoteIDs>
+        </Note>
+        <Note ID="23" FontSize="12.0" Position="1611.437106,1401.06934" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Webpack</String>
+            <ConnectedNoteIDs>22</ConnectedNoteIDs>
+        </Note>
+        <Note ID="25" FontSize="12.0" Position="1114.058843,1398.667221" Width="169.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>front-side template (Nunjucks)</String>
+            <ConnectedNoteIDs>20</ConnectedNoteIDs>
+        </Note>
+        <Note ID="27" FontSize="12.0" Position="776.786573,1096.485577" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Grunt</String>
+            <ConnectedNoteIDs>28, 35</ConnectedNoteIDs>
+            <PointsToNoteIDs>28</PointsToNoteIDs>
+        </Note>
+        <Note ID="28" FontSize="12.0" Position="778.59312,1237.819654" Width="34.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Gulp</String>
+            <ConnectedNoteIDs>27, 42</ConnectedNoteIDs>
+            <PointsToNoteIDs>42</PointsToNoteIDs>
+        </Note>
+        <Note ID="29" FontSize="12.0" Position="924.857309,1236.619964" Width="110.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Backbone + React </String>
+            <ConnectedNoteIDs>18, 30</ConnectedNoteIDs>
+            <PointsToNoteIDs>30</PointsToNoteIDs>
+        </Note>
+        <Note ID="30" FontSize="12.0" Position="932.229281,1399.612809" Width="88.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Reflux + React</String>
+            <ConnectedNoteIDs>29, 48</ConnectedNoteIDs>
+            <PointsToNoteIDs>48</PointsToNoteIDs>
+        </Note>
+        <Note ID="31" FontSize="13.0" Position="1599.299701,1009.667221" Width="57.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.290055 0.1523 0.182215</Border>
+                <Fill>0.940019 0.892907 0.779716</Fill>
+            </Appearance>
+            <String>모듈 관리</String>
+            <ConnectedNoteIDs>9, 19</ConnectedNoteIDs>
+        </Note>
+        <Note ID="33" FontSize="13.0" Position="1151.284268,1008.930398" Width="107.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.290055 0.1523 0.182215</Border>
+                <Fill>0.940019 0.892907 0.779716</Fill>
+            </Appearance>
+            <String>HTML 템플릿 엔진</String>
+            <ConnectedNoteIDs>9, 20</ConnectedNoteIDs>
+        </Note>
+        <Note ID="34" FontSize="13.0" Position="946.396692,1006.0" Width="66.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.290055 0.1523 0.182215</Border>
+                <Fill>0.940019 0.892907 0.779716</Fill>
+            </Appearance>
+            <String>MVC 관련</String>
+            <ConnectedNoteIDs>9, 18</ConnectedNoteIDs>
+        </Note>
+        <Note ID="35" FontSize="13.0" Position="769.308954,1008.0" Width="68.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.290055 0.1523 0.182215</Border>
+                <Fill>0.940019 0.892907 0.779716</Fill>
+            </Appearance>
+            <String>태스크 관리</String>
+            <ConnectedNoteIDs>9, 27</ConnectedNoteIDs>
+        </Note>
+        <Note ID="37" FontSize="13.0" Position="590.78175,1013.0" Width="42.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.290055 0.1523 0.182215</Border>
+                <Fill>0.940019 0.892907 0.779716</Fill>
+            </Appearance>
+            <String>라우팅</String>
+            <ConnectedNoteIDs>9, 38</ConnectedNoteIDs>
+        </Note>
+        <Note ID="38" FontSize="12.0" Position="560.281364,1099.485577" Width="108.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>server-side routing</String>
+            <ConnectedNoteIDs>37, 39</ConnectedNoteIDs>
+            <PointsToNoteIDs>39</PointsToNoteIDs>
+        </Note>
+        <Note ID="39" FontSize="12.0" Position="556.636461,1407.280359" Width="114.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>React-Router (SPA)</String>
+            <ConnectedNoteIDs>38</ConnectedNoteIDs>
+        </Note>
+        <Note ID="42" FontSize="12.0" Position="750.696543,1403.839744" Width="90.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>react-starter-kit</String>
+            <ConnectedNoteIDs>28</ConnectedNoteIDs>
+        </Note>
+        <Note ID="44" FontSize="13.0" Position="425.44499,1014.0" Width="35.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.290055 0.1523 0.182215</Border>
+                <Fill>0.940019 0.892907 0.779716</Fill>
+            </Appearance>
+            <String>CSS</String>
+            <ConnectedNoteIDs>9, 45</ConnectedNoteIDs>
+        </Note>
+        <Note ID="45" FontSize="12.0" Position="403.20235,1099.826446" Width="77.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Grunt-LESS </String>
+            <ConnectedNoteIDs>44, 46</ConnectedNoteIDs>
+            <PointsToNoteIDs>46</PointsToNoteIDs>
+        </Note>
+        <Note ID="46" FontSize="12.0" Position="363.449638,1231.698218" Width="146.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Gulp-LESS + Autoprefixer</String>
+            <ConnectedNoteIDs>45, 47</ConnectedNoteIDs>
+            <PointsToNoteIDs>47</PointsToNoteIDs>
+        </Note>
+        <Note ID="47" FontSize="12.0" Position="394.861958,1381.043388" Width="87.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Webpack 
+style-loader + 
+less-loader + 
+postcss-loader</String>
+            <ConnectedNoteIDs>46</ConnectedNoteIDs>
+        </Note>
+        <Note ID="48" FontSize="12.0" Position="934.799749,1525.0" Width="84.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>React + Relay</String>
+            <ConnectedNoteIDs>30</ConnectedNoteIDs>
+        </Note>
+        <Note ID="50" FontSize="13.0" Position="200.0712,1015.0" Width="70.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.290055 0.1523 0.182215</Border>
+                <Fill>0.940019 0.892907 0.779716</Fill>
+            </Appearance>
+            <String> HTTP API</String>
+            <ConnectedNoteIDs>9, 51</ConnectedNoteIDs>
+        </Note>
+        <Note ID="51" FontSize="12.0" Position="193.45079,1099.198815" Width="86.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Basic RESTful</String>
+            <ConnectedNoteIDs>50, 52</ConnectedNoteIDs>
+            <PointsToNoteIDs>52</PointsToNoteIDs>
+        </Note>
+        <Note ID="52" FontSize="12.0" Position="182.351832,1398.398168" Width="105.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>RESTful + jsonapi</String>
+            <ConnectedNoteIDs>51, 53</ConnectedNoteIDs>
+            <PointsToNoteIDs>53</PointsToNoteIDs>
+        </Note>
+        <Note ID="53" FontSize="12.0" Position="185.347701,1519.962105" Width="102.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>GraphQL + Relay</String>
+            <ConnectedNoteIDs>52</ConnectedNoteIDs>
+        </Note>
+        <Note ID="55" FontSize="13.0" Position="1756.386558,1011.184717" Width="74.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.290055 0.1523 0.182215</Border>
+                <Fill>0.940019 0.892907 0.779716</Fill>
+            </Appearance>
+            <String>Javascript</String>
+            <ConnectedNoteIDs>9, 58</ConnectedNoteIDs>
+        </Note>
+        <Note ID="56" FontSize="12.0" Position="1742.621039,1396.380526" Width="137.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>ES6 By Webpack: 
+babel-loader</String>
+            <ConnectedNoteIDs>57</ConnectedNoteIDs>
+        </Note>
+        <Note ID="57" FontSize="12.0" Position="1750.295518,1242.54372" Width="113.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>ES6 By browserify: 
+babelify</String>
+            <ConnectedNoteIDs>56, 58</ConnectedNoteIDs>
+            <PointsToNoteIDs>56</PointsToNoteIDs>
+        </Note>
+        <Note ID="58" FontSize="12.0" Position="1754.677897,1101.999449" Width="91.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Pure Javascript</String>
+            <ConnectedNoteIDs>55, 57</ConnectedNoteIDs>
+            <PointsToNoteIDs>57</PointsToNoteIDs>
+        </Note>
+        <Note ID="60" FontSize="13.0" Position="1366.0,1009.0" Width="93.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.290055 0.1523 0.182215</Border>
+                <Fill>0.940019 0.892907 0.779716</Fill>
+            </Appearance>
+            <String>Internalization</String>
+            <ConnectedNoteIDs>9, 61</ConnectedNoteIDs>
+        </Note>
+        <Note ID="61" FontSize="12.0" Position="1378.0,1111.0" Width="78.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>python-babel</String>
+            <ConnectedNoteIDs>60, 62</ConnectedNoteIDs>
+            <PointsToNoteIDs>62</PointsToNoteIDs>
+        </Note>
+        <Note ID="62" FontSize="12.0" Position="1389.605053,1402.0" Width="59.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>React-intl</String>
+            <ConnectedNoteIDs>61</ConnectedNoteIDs>
+        </Note>
+        <Note ID="64" FontSize="13.0" Position="1926.957031,1014.441406" Width="90.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.290055 0.1523 0.182215</Border>
+                <Fill>0.940019 0.892907 0.779716</Fill>
+            </Appearance>
+            <String>UI Framework</String>
+            <ConnectedNoteIDs>9, 65</ConnectedNoteIDs>
+        </Note>
+        <Note ID="65" FontSize="12.0" Position="1928.492188,1094.867188" Width="90.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Pure JS + CSS</String>
+            <ConnectedNoteIDs>64, 66</ConnectedNoteIDs>
+            <PointsToNoteIDs>66</PointsToNoteIDs>
+        </Note>
+        <Note ID="66" FontSize="12.0" Position="1945.0,1244.0" Width="60.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Bootstrap</String>
+            <ConnectedNoteIDs>65, 67</ConnectedNoteIDs>
+            <PointsToNoteIDs>67</PointsToNoteIDs>
+        </Note>
+        <Note ID="67" FontSize="12.0" Position="1937.0,1403.0" Width="95.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>React-Bootstrap</String>
+            <ConnectedNoteIDs>66</ConnectedNoteIDs>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <AutoFit>1-2, 4-5, 7, 9-11, 13-14, 19-20, 22-23, 25, 27-31, 33, 35, 37-39, 44-48, 50-53, 57-58, 61-62, 64-67</AutoFit>
+    <NoteStyles>
+        <Style Name="Title Text" ID="2158121E-B802-4FAA-97CE-CD58D9AAC2A9" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Red Text" ID="DFFBC523-BA9B-4D57-9323-A964BBFB787D" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>1.0 0.0 0.0</TextColor>
+        </Style>
+        <Style Name="Brown Bubble" ID="597E19BB-4ECE-4F71-8BC6-13DB01009E18" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.290055 0.1523 0.182215</BorderColor>
+            <FillColor>0.940019 0.892907 0.779716</FillColor>
+        </Style>
+        <Style Name="Yellow Bubble" ID="85271905-3788-4453-8570-2D833CC1DE1B" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.756763 0.785592 0.373258</BorderColor>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+        </Style>
+        <Style Name="Green Bubble" ID="8E68A227-62DE-4C91-BCAB-DF4020261F99" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.331867 0.609932 0.356197</BorderColor>
+            <FillColor>0.790123 0.882328 0.80198</FillColor>
+        </Style>
+        <Style Name="Blue Bubble" ID="9DD014FF-0AFD-4BCE-8BCA-E0144FF87C20" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.477193 0.557066 0.76433</BorderColor>
+            <FillColor>0.840969 0.866828 0.925903</FillColor>
+        </Style>
+        <Style Name="Pink Bubble" ID="CC4CCEF8-3DC4-4578-995D-F312CC61A642" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.747881 0.366532 0.542813</BorderColor>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999737 0.986332 0.931298</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
