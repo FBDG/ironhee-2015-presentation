@@ -43,11 +43,14 @@ FBDB - 2015 Meetup</String>
             <String>React  사용 경험이 있는 개발자</String>
             <ConnectedNoteIDs>4</ConnectedNoteIDs>
         </Note>
-        <Note ID="6" FontSize="12.0" Position="1020.70397,838.791807" Width="109.0">
+        <Note ID="6" FontSize="21.0" Position="1021.0,812.0" Width="169.0">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
             </Appearance>
-            <String>실제 프로젝트에 어떤 식으로 적용했는가 </String>
+            <String>Ediket 프론트엔드 
+개발스택 변경 사례</String>
             <ConnectedNoteIDs>9, 14-15, 68, 77</ConnectedNoteIDs>
         </Note>
         <Note ID="7" FontSize="14.0" Position="1936.467665,403.855903" Width="61.0">
@@ -66,11 +69,13 @@ FBDB - 2015 Meetup</String>
             <String>결과적으로 어떤 형태가 되었는가</String>
             <ConnectedNoteIDs>10-13</ConnectedNoteIDs>
         </Note>
-        <Note ID="9" FontSize="19.0" Position="938.362331,1141.986486" Width="118.0">
+        <Note ID="9" FontSize="19.0" Position="938.0,1142.0" Width="80.0">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Border Weight="1">0.331867 0.609932 0.356197</Border>
+                <Fill>0.790123 0.882328 0.80198</Fill>
             </Appearance>
-            <String>실제 적용 사례</String>
+            <String>개발 스택</String>
             <ConnectedNoteIDs>6, 31, 33-35, 37, 44, 50, 55, 60, 64</ConnectedNoteIDs>
         </Note>
         <Note ID="10" FontSize="12.0" Position="2385.879464,528.507812" Width="113.0">
@@ -111,6 +116,8 @@ FBDB - 2015 Meetup</String>
         <Note ID="15" FontSize="19.0" Position="1607.796229,716.96428" Width="145.0">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Border Weight="1">0.331867 0.609932 0.356197</Border>
+                <Fill>0.790123 0.882328 0.80198</Fill>
             </Appearance>
             <String>비개발팀과의 소통</String>
             <ConnectedNoteIDs>6</ConnectedNoteIDs>
@@ -427,6 +434,8 @@ babelify</String>
         <Note ID="68" FontSize="20.0" Position="695.0,823.0" Width="156.0">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Border Weight="1">0.331867 0.609932 0.356197</Border>
+                <Fill>0.790123 0.882328 0.80198</Fill>
             </Appearance>
             <String>라이브러리 + 스택 
 비교 요소</String>
@@ -491,6 +500,8 @@ babelify</String>
         <Note ID="77" FontSize="20.0" Position="975.92272,535.638091" Width="118.0">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Border Weight="1">0.331867 0.609932 0.356197</Border>
+                <Fill>0.790123 0.882328 0.80198</Fill>
             </Appearance>
             <String>추구하는 가치</String>
             <ConnectedNoteIDs>6, 71, 78-82, 86</ConnectedNoteIDs>
@@ -645,6 +656,112 @@ babelify</String>
             <String>미래의 성장에 대비</String>
             <ConnectedNoteIDs>93</ConnectedNoteIDs>
         </Note>
+        <Note ID="115" FontSize="19.0" Position="3026.212534,881.65037" Width="112.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>발표자료 순서</String>
+            <ConnectedNoteIDs>116</ConnectedNoteIDs>
+            <PointsToNoteIDs>116</PointsToNoteIDs>
+        </Note>
+        <Note ID="116" FontSize="12.0" Position="3045.885417,986.692708" Width="77.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>발표 주제 설명</String>
+            <ConnectedNoteIDs>115, 117-118</ConnectedNoteIDs>
+            <PointsToNoteIDs>117</PointsToNoteIDs>
+        </Note>
+        <Note ID="117" FontSize="12.0" Position="3060.306788,1216.135249" Width="64.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>결과물 시연</String>
+            <ConnectedNoteIDs>116, 119, 122, 124-125, 127</ConnectedNoteIDs>
+            <PointsToNoteIDs>127</PointsToNoteIDs>
+        </Note>
+        <Note ID="118" FontSize="12.0" Position="2764.186324,986.386761" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>React + Reflux 등 페이스북 라이브러리 실무 적용사례</String>
+            <ConnectedNoteIDs>116</ConnectedNoteIDs>
+        </Note>
+        <Note ID="119" FontSize="12.0" Position="2758.146001,1284.692708" Width="191.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Task runner 돌려보기 (watch, build)</String>
+            <ConnectedNoteIDs>117</ConnectedNoteIDs>
+        </Note>
+        <Note ID="122" FontSize="12.0" Position="2758.031586,1170.208333" Width="197.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Webpack 이 하는 역할 시연
+- 어떻게 css 를 불러오는가
+- 어떻게 js 를 빌드하는가
+- Hot loader 의 역할
+- Browser sync 연동해서 어떻게 하는가</String>
+            <ConnectedNoteIDs>117</ConnectedNoteIDs>
+        </Note>
+        <Note ID="124" FontSize="12.0" Position="2756.722336,1121.990651" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>간단한 Counter
+구현해보기 (Router + React,+ Reflux)</String>
+            <ConnectedNoteIDs>117</ConnectedNoteIDs>
+        </Note>
+        <Note ID="125" FontSize="12.0" Position="2762.809812,1330.574765" Width="53.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>배포하기</String>
+            <ConnectedNoteIDs>117</ConnectedNoteIDs>
+        </Note>
+        <Note ID="127" FontSize="12.0" Position="3077.257392,1424.008233" Width="29.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>후기</String>
+            <ConnectedNoteIDs>117, 128-132</ConnectedNoteIDs>
+        </Note>
+        <Note ID="128" FontSize="12.0" Position="2760.246304,1416.322749" Width="74.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>재사용성 증가</String>
+            <ConnectedNoteIDs>127</ConnectedNoteIDs>
+        </Note>
+        <Note ID="129" FontSize="12.0" Position="2755.74328,1452.338374" Width="94.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Build 시간 최적화</String>
+            <ConnectedNoteIDs>127</ConnectedNoteIDs>
+        </Note>
+        <Note ID="130" FontSize="12.0" Position="2757.816364,1487.401882" Width="137.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>백엔드와 별개의 작업 환경</String>
+            <ConnectedNoteIDs>127</ConnectedNoteIDs>
+        </Note>
+        <Note ID="131" FontSize="12.0" Position="2757.821909,1527.65037" Width="119.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>유지보수의 용이성 증가</String>
+            <ConnectedNoteIDs>127</ConnectedNoteIDs>
+        </Note>
+        <Note ID="132" FontSize="12.0" Position="2756.921707,1568.493112" Width="134.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>빠른 피드백으로 얻는 장점</String>
+            <ConnectedNoteIDs>127</ConnectedNoteIDs>
+        </Note>
     </Notes>
     <BackgroundShapes>
         <Shape ID="106" Sticky="Yes" Position="1656.355903,729.559028" Width="693.992985" Height="406.0">
@@ -653,7 +770,7 @@ babelify</String>
             </Appearance>
         </Shape>
     </BackgroundShapes>
-    <AutoFit>1-2, 4-5, 7, 9-11, 13-15, 19-20, 22-23, 25, 27-31, 33, 35, 37-39, 44-48, 50-53, 57-58, 61-62, 64-67, 69, 71-72, 74-77, 80, 82, 86, 90-93, 100-101, 103-104, 111-112, 114</AutoFit>
+    <AutoFit>1-2, 4-7, 9-11, 13-15, 19-20, 22-23, 25, 27-31, 33, 35, 37-39, 44-48, 50-53, 57-58, 61-62, 64-67, 69, 71-72, 74-77, 80, 82, 86, 90-93, 100-101, 103-104, 111-112, 114-117, 119, 124, 127-129, 131</AutoFit>
     <NoteStyles>
         <Style Name="Title Text" ID="2158121E-B802-4FAA-97CE-CD58D9AAC2A9" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
             <FontSize>28.0</FontSize>
