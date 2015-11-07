@@ -1,7 +1,5 @@
 #!/bin/bash
-rm -rf deploy
-mkdir deploy
-cp -R index.html vendor static deploy
+bash scripts/build.sh
 (
 cd deploy
 git init

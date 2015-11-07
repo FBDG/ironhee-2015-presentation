@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "init": "bash scripts/init.sh",
+    "build": "bash scripts/build.sh",
     "publish": "bash scripts/publish.sh"
   },
   "dependencies": {
