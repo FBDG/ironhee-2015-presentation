@@ -1,6 +1,7 @@
 #!/bin/bash
 rm -rf deploy
-cp -R vendor/* static/* deploy
+mkdir deploy
+cp -R index.html vendor static deploy
 (
 cd deploy
 git init
