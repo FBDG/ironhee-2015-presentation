@@ -23,6 +23,11 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<style>
+			img {
+				vertical-align: top !important;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -65,6 +70,9 @@
 
 				<section>
 					<section>
+						<h2>상황</h2>
+					</section>
+					<section>
 						<h3>
 							구현로직
 						</h3>
@@ -85,7 +93,7 @@
 							스타트업
 						</h3>
 						<p class="fragment">
-							잦은 기획의 변경
+							잦은 기획의 <strong>변경</strong>
 						</p>
 					</section>
 					<section>
@@ -147,77 +155,85 @@
 						</p>
 					</section>
 					<section>
-						<h3>
+						<h2>
 							Backbone + Marionette
-						</h3>
-						<p>
-							View 복잡함 (DOM 직접 제어)
+						</h2>
+						<p class="fragment">
+							<strong>View</strong> 복잡함
+							<!-- (DOM 직접 제어) -->
 						</p>
-						<p>
-							-> 가독성 낮음
+						<p class="fragment">
+							<strong>가독성</strong> 낮음
 						</p>
-						<p>
-							-> 재사용성이 떨어짐
+						<p class="fragment">
+							<strong>재사용성</strong> 낮음
 						</p>
-						<p>
-							-> <strong>협업이 어려움</strong>
-						</p>
-						<p>
-							그 밖의 여러가지...
+						<p class="fragment">
+							<strong>협업</strong> 어려움
 						</p>
 					</section>
 					<section>
-						<h3>
+						<h2>
 							Require.js
-						</h3>
-						<p>
+						</h2>
+						<p class="fragment">
 							AMD 전용 코드
 						</p>
-						<p>
-							dependencies Hell
+						<p class="fragment">
+							Dependencies Hell
 						</p>
-						<p>
+						<p class="fragment">
 							<strong>복잡함</strong>
 						</p>
 					</section>
 					<section>
-						<h3>
+						<h2>
 							Flask + Jinja2 + Babel<br>
-							(server-side template)
-						</h3>
-						<p>
-							백엔드 개발자가 프론트 코드를 작성 </br>
-							or </br>
-							프론트 개발자가 백엔드 코드를 작성
+							<small>server-side template</small>
+						</h2>
+						<p class="fragment">
+							<strong>프론트</strong> 개발자: <strong>백엔드</strong> 코드를 작성
 						</p>
-						<p>
+						<p class="fragment">
+							<strong>백엔드</strong> 개발자: <strong>프론트</strong> 코드를 작성
+						</p>
+						<p class="fragment">
 							<strong>Context Switching Cost</strong>
 						</p>
-						<p>
-							<strong>프론트와 백엔드의 역할 분리 X</strong>
+						<p class="fragment">
+							프론트와 백엔드의 <strong>역할 분리 X</strong>
 						</p>
 					</section>
 					<section>
-						<h3>
+						<h2>
 							Flask<br>
-							(Server-Side Routing)
-						</h3>
-						<p>
-							팀의 핵심역량 = 프론트엔드 개발
+							<small>Server-Side Routing</small>
+						</h2>
+						<p class="fragment">
+							<strong>프론트</strong> 개발자: <strong>백엔드</strong>의 구현에 의존
 						</p>
-						<p>
-							-> Client-Side Routing (SPA) 필요
+						<p class="fragment">
+							팀의 핵심역량 = 프론트
+						</p>
+						<p class="fragment">
+							<strong>Client-Side Routing</strong> 필요
 						</p>
 					</section>
 					<section>
-						<h3>
+						<h2>
 							Grunt
-						</h3>
-						<p>
-							사실 단점이라 할만한 단점은 없는 것 같다.
+						</h2>
+						<p class="fragment">
+							더 좋은 대안
 						</p>
-						<p>
-							요즘게 너무 좋아서 안쓰는 케이스.
+						<p class="fragment">
+							<strong>Gulp</strong>
+						</p>
+						<p class="fragment">
+							<strong>NPM scripts</strong>
+						</p>
+						<p class="fragment">
+							<strong>ES7 Generator</strong>
 						</p>
 					</section>
 				</section>
@@ -271,23 +287,279 @@
 						/>
 					</section>
 					<section>
-						<p>자세한 내용은 시연에서...</p>
+						<h2 className="fragment">
+							React + Reflux
+						</h2>
+						<p class="fragment">
+							<strong>View</strong> 단순함
+						</p>
+						<p class="fragment">
+							<strong>가독성</strong> 높음
+						</p>
+						<p class="fragment">
+							<strong>재사용성</strong> 높음
+						</p>
+						<p class="fragment">
+							<strong>협업</strong> 쉬움
+						</p>
+					</section>
+					<section>
+						<h2>
+							Webpack + Babel
+						</h2>
+						<p class="fragment">
+							<code class="hljs javascript">
+<pre>import _ from 'lodash';
+
+function helloWorld() {
+  console.log('hello world!');
+}
+
+export default helloWorld;
+</pre>
+							</code>
+						</p>
+						<p class="fragment">
+							<strong>ES6 / ES7</strong>
+						</p>
+						<p class="fragment">
+							Node Module
+						</p>
+					</section>
+					<section>
+						<h2>
+							React + React-Intl + Nunjucks<br>
+							<small>client-side template</small>
+						</h2>
+						<p class="fragment">
+							프론트 개발자: 프론트 코드를 작성
+						</p>
+						<p class="fragment">
+							백엔드 개발자: 백엔드 코드를 작성
+						</p>
+						<p class="fragment">
+							<strong>단일 책임 원칙</strong>
+						</p>
+					</section>
+					<section>
+						<h2>
+							React-Router<br>
+							<small>Client-Side Routing (SPA)</small>
+						</h2>
+						<p class="fragment">
+							성능 UP (Lazy Loading 필요)
+						</p>
+						<p class="fragment">
+							역할 분리
+						</p>
+					</section>
+					<section>
+						<h2>
+							ES7 Generator
+						</h2>
+						<p class="fragment">
+							<img
+								width="400"
+								src="static/img/react-starter-kit.png"
+								alt="react-starter-kit"
+							/>
+						</p>
+						<p class="fragment">
+							<strong>유연함</strong>
+						</p>
+						<p class="fragment">
+							<strong>단순함</strong>
+						</p>
 					</section>
 				</section>
 
 				<section>
 					<section>
 						<h2>
-							후기
+							개발 시나리오
 						</h2>
-						<p class="fragment">
-							프론트엔드,
-						</p>
-						<p class="fragment">
-							로맨틱,
-						</p>
-						<p class="fragment">
-							성공적
+					</section>
+					<section>
+						<p>'쿠폰 생성 페이지가 필요해요!'</p>
+					</section>
+					<section>
+						<p>Run Webpack Devserver</p>
+						<img
+							width="600"
+							src="static/img/npm-run-serve.png"
+							alt="npm-run-serve"
+						/>
+					</section>
+					<section>
+						<p>Dummy Component 작성</p>
+						<img
+							width="900"
+							src="static/img/react-couponpage.png"
+							alt="react-couponpage"
+						/>
+					</section>
+					<section>
+						<p>Router 에 Component 추가</p>
+						<img
+							width="800"
+							src="static/img/router-code.png"
+							alt="router-code"
+						/>
+					</section>
+					<section>
+						<p>Header 에 CouponPage Link 추가</p>
+						<img
+							width="550"
+							src="static/img/topbar-code.png"
+							alt="topbar-code"
+						/>
+					</section>
+					<section>
+						<p>Browser 에서 구현 확인</p>
+						<img
+							width="550"
+							src="static/img/couponpage-dummy-web.gif"
+							alt="couponpage-dummy-web"
+						/>
+					</section>
+					<section>
+						<p>Component UI 구현</p>
+						<img
+							width="400"
+							src="static/img/coupon-ui-code.png"
+							alt="coupon-ui-code"
+						/>
+						<img
+							width="300"
+							src="static/img/coupon-ui-web.gif"
+							alt="coupon-ui-web"
+						/>
+					</section>
+					<section>
+						<p>Style 적용</p>
+						<img
+							width="400"
+							src="static/img/coupon-style-scss.png"
+							alt="coupon-style-scss"
+						/>
+						<img
+							width="400"
+							src="static/img/coupon-style-web.png"
+							alt="coupon-style-web"
+						/>
+						<img
+							width="400"
+							src="static/img/coupon-style.png"
+							alt="coupon-style"
+						/>
+					</section>
+					<section>
+						<p>Store 및 Action 구현</p>
+						<img
+							width="400"
+							src="static/img/store-code.png"
+							alt="store-code"
+						/>
+						<img
+							width="400"
+							src="static/img/coupon-reducer-code.png"
+							alt="coupon-reducer-code"
+						/>
+						<img
+							width="400"
+							src="static/img/coupon-action-code.png"
+							alt="coupon-action-code"
+						/>
+					</section>
+					<section>
+						<p>Component 에서 Store &amp; Action 이용하도록 변경</p>
+						<img
+							width="400"
+							src="static/img/coupon-ui-code.png"
+							alt="coupon-ui-code"
+						/>
+						=>
+						<img
+							width="400"
+							src="static/img/coupon-page-use-redux-code.png"
+							alt="coupon-page-use-redux-code"
+						/>
+					</section>
+					<section>
+						<p>Browser 에서 구현 확인</p>
+						<img
+							width="400"
+							src="static/img/coupon-ui-web.gif"
+							alt="coupon-ui-web"
+						/>
+						=>
+						<img
+							width="400"
+							src="static/img/coupon-use-redux-web.gif"
+							alt="coupon-use-redux-web"
+						/>
+					</section>
+					<section>
+						<p>다국어 (Intl) 적용</p>
+					</section>
+					<section>
+						<p>서버와 연동 (REST API)</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							얻게된 것
+						</h2>
+					</section>
+					<section>
+						<h3>오로지 프론트엔드</h3>
+					</section>
+					<section>
+						<h3>빠른 개발 속도</h3>
+					</section>
+					<section>
+						<h3>높은 재사용성</h3>
+					</section>
+					<section>
+						<h3>유연한 구조</h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							가장 중요한 것
+						</h2>
+					</section>
+					<section>
+						<h3>소통</h3>
+						<img
+							width="600"
+							src="static/img/communication.jpg"
+							alt="communication"
+						>
+					</section>
+					<section>
+						<h3>신뢰</h3>
+						<img
+							width="600"
+							src="static/img/trust.png"
+							alt="trust"
+						>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							Related Links
+						</h2>
+						<p>
+							<a href="https://github.com/ironhee/ironhee-frontend-boilerplate">
+								ironhee-frontend-boilerplate
+							</a>
 						</p>
 					</section>
 				</section>
