@@ -1,12 +1,12 @@
 #!/bin/bash
-rm -rf deploy
-mkdir deploy
-cp -R index.html css js lib plugin deploy
+rm -rf publish
+mkdir publish
+cp -R index.html css js images lib plugin publish
 (
-cd deploy
+cd publish
 git init
 git add -A
-git commit -m "Deployed to Github Pages"
+git commit -m "published to Github Pages"
 git push --force --quiet git@github.com:FBDG/ironhee-2015-presentation.git master:gh-pages > /dev/null 2>&1
 cd -
 )
