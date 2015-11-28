@@ -1,5 +1,7 @@
 #!/bin/bash
-bash scripts/build.sh
+rm -rf deploy
+mkdir deploy
+cp -R index.html css js lib plugin deploy
 (
 cd deploy
 git init

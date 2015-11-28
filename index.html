@@ -1,25 +1,33 @@
 <!doctype html>
 <html lang="en">
+
 	<head>
 		<meta charset="utf-8">
+
 		<title>React 사용사례 + Redux</title>
 		<meta name="description" content="FBDG 2015 Ironhee 발표: React 사용사례 + Redux">
 		<meta name="author" content="Ironhee">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucjsent" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-		<link rel="stylesheet" href="vendor/css/reveal.css">
-		<link rel="stylesheet" href="vendor/css/theme/beige.css" id="theme">
-		<link rel="stylesheet" href="vendor/lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement('link');
+			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match(/print-pdf/gi) ?
-				'vendor/css/print/pdf.css' :
-				'vendor/css/print/paper.css';
-			document.getElementsByTagName('head')[0].appendChild(link);
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -29,8 +37,12 @@
 			}
 		</style>
 	</head>
+
 	<body>
+
 		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
 					<h1>React 사용사례</h1>
@@ -45,25 +57,25 @@
 						<h2>Ediket</h2>
 						<img
 							width="800"
-							data-src="static/img/ediket-1.png"
+							data-src="images/ediket-1.png"
 						>
 					</section>
 					<section>
 						<img
 							width="800"
-							data-src="static/img/ediket-2.png"
+							data-src="images/ediket-2.png"
 						>
 					</section>
 					<section>
 						<img
 							width="800"
-							data-src="static/img/ediket-3.png"
+							data-src="images/ediket-3.png"
 						>
 					</section>
 					<section>
 						<img
 							width="800"
-							data-src="static/img/ediket-4.png"
+							data-src="images/ediket-4.png"
 						>
 					</section>
 				</section>
@@ -115,37 +127,37 @@
 					<section>
 						<img
 							width="200"
-							src="static/img/backbone.png"
+							src="images/backbone.png"
 							alt="backbone"
 						/>
 						<img
 							width="200"
-							src="static/img/marionette.png"
+							src="images/marionette.png"
 							alt="marionette"
 						/>
 						<img
 							width="200"
-							src="static/img/grunt.jpg"
+							src="images/grunt.jpg"
 							alt="grunt"
 						/>
 						<img
 							width="200"
-							src="static/img/requirejs.png"
+							src="images/requirejs.png"
 							alt="requirejs"
 						/>
 						<img
 							width="200"
-							src="static/img/flask.jpg"
+							src="images/flask.jpg"
 							alt="flask"
 						/>
 						<img
 							width="200"
-							src="static/img/jinja2.png"
+							src="images/jinja2.png"
 							alt="jinja2"
 						/>
 						<img
 							width="200"
-							src="static/img/python-babel.png"
+							src="images/python-babel.png"
 							alt="python-babel"
 						/>
 					</section>
@@ -247,42 +259,42 @@
 					<section>
 						<img
 							width="200"
-							src="static/img/flux.png"
+							src="images/flux.png"
 							alt="flux"
 						/>
 						<img
 							width="200"
-							src="static/img/babel.png"
+							src="images/babel.png"
 							alt="babel"
 						/>
 						<img
 							width="200"
-							src="static/img/webpack.png"
+							src="images/webpack.png"
 							alt="webpack"
 						/>
 						<img
 							width="200"
-							src="static/img/react-intl.png"
+							src="images/react-intl.png"
 							alt="react-intl"
 						/>
 						<img
 							width="400"
-							src="static/img/react.png"
+							src="images/react.png"
 							alt="react"
 						/>
 						<img
 							width="400"
-							src="static/img/nunjucks.png"
+							src="images/nunjucks.png"
 							alt="nunjucks"
 						/>
 						<img
 							width="400"
-							src="static/img/react-router.png"
+							src="images/react-router.png"
 							alt="react-router"
 						/>
 						<img
 							width="400"
-							src="static/img/react-starter-kit.png"
+							src="images/react-starter-kit.png"
 							alt="react-starter-kit"
 						/>
 					</section>
@@ -360,7 +372,7 @@ export default helloWorld;
 						<p class="fragment">
 							<img
 								width="400"
-								src="static/img/react-starter-kit.png"
+								src="images/react-starter-kit.png"
 								alt="react-starter-kit"
 							/>
 						</p>
@@ -386,7 +398,7 @@ export default helloWorld;
 						<p>Run Webpack Devserver</p>
 						<img
 							width="600"
-							src="static/img/npm-run-serve.png"
+							src="images/npm-run-serve.png"
 							alt="npm-run-serve"
 						/>
 					</section>
@@ -394,7 +406,7 @@ export default helloWorld;
 						<p>Dummy Component 작성</p>
 						<img
 							width="900"
-							src="static/img/react-couponpage.png"
+							src="images/react-couponpage.png"
 							alt="react-couponpage"
 						/>
 					</section>
@@ -402,7 +414,7 @@ export default helloWorld;
 						<p>Router 에 Component 추가</p>
 						<img
 							width="800"
-							src="static/img/router-code.png"
+							src="images/router-code.png"
 							alt="router-code"
 						/>
 					</section>
@@ -410,7 +422,7 @@ export default helloWorld;
 						<p>Header 에 CouponPage Link 추가</p>
 						<img
 							width="550"
-							src="static/img/topbar-code.png"
+							src="images/topbar-code.png"
 							alt="topbar-code"
 						/>
 					</section>
@@ -418,7 +430,7 @@ export default helloWorld;
 						<p>Browser 에서 구현 확인</p>
 						<img
 							width="550"
-							src="static/img/couponpage-dummy-web.gif"
+							src="images/couponpage-dummy-web.gif"
 							alt="couponpage-dummy-web"
 						/>
 					</section>
@@ -426,12 +438,12 @@ export default helloWorld;
 						<p>Component UI 구현</p>
 						<img
 							width="400"
-							src="static/img/coupon-ui-code.png"
+							src="images/coupon-ui-code.png"
 							alt="coupon-ui-code"
 						/>
 						<img
 							width="300"
-							src="static/img/coupon-ui-web.gif"
+							src="images/coupon-ui-web.gif"
 							alt="coupon-ui-web"
 						/>
 					</section>
@@ -439,17 +451,17 @@ export default helloWorld;
 						<p>Style 적용</p>
 						<img
 							width="400"
-							src="static/img/coupon-style-scss.png"
+							src="images/coupon-style-scss.png"
 							alt="coupon-style-scss"
 						/>
 						<img
 							width="400"
-							src="static/img/coupon-style-web.png"
+							src="images/coupon-style-web.png"
 							alt="coupon-style-web"
 						/>
 						<img
 							width="400"
-							src="static/img/coupon-style.png"
+							src="images/coupon-style.png"
 							alt="coupon-style"
 						/>
 					</section>
@@ -457,17 +469,17 @@ export default helloWorld;
 						<p>Store 및 Action 구현</p>
 						<img
 							width="400"
-							src="static/img/store-code.png"
+							src="images/store-code.png"
 							alt="store-code"
 						/>
 						<img
 							width="400"
-							src="static/img/coupon-reducer-code.png"
+							src="images/coupon-reducer-code.png"
 							alt="coupon-reducer-code"
 						/>
 						<img
 							width="400"
-							src="static/img/coupon-action-code.png"
+							src="images/coupon-action-code.png"
 							alt="coupon-action-code"
 						/>
 					</section>
@@ -475,13 +487,13 @@ export default helloWorld;
 						<p>Component 에서 Store &amp; Action 이용하도록 변경</p>
 						<img
 							width="400"
-							src="static/img/coupon-ui-code.png"
+							src="images/coupon-ui-code.png"
 							alt="coupon-ui-code"
 						/>
 						=>
 						<img
 							width="400"
-							src="static/img/coupon-page-use-redux-code.png"
+							src="images/coupon-page-use-redux-code.png"
 							alt="coupon-page-use-redux-code"
 						/>
 					</section>
@@ -489,13 +501,13 @@ export default helloWorld;
 						<p>Browser 에서 구현 확인</p>
 						<img
 							width="400"
-							src="static/img/coupon-ui-web.gif"
+							src="images/coupon-ui-web.gif"
 							alt="coupon-ui-web"
 						/>
 						=>
 						<img
 							width="400"
-							src="static/img/coupon-use-redux-web.gif"
+							src="images/coupon-use-redux-web.gif"
 							alt="coupon-use-redux-web"
 						/>
 					</section>
@@ -537,7 +549,7 @@ export default helloWorld;
 						<h3>소통</h3>
 						<img
 							width="600"
-							src="static/img/communication.jpg"
+							src="images/communication.jpg"
 							alt="communication"
 						>
 					</section>
@@ -545,7 +557,7 @@ export default helloWorld;
 						<h3>신뢰</h3>
 						<img
 							width="600"
-							src="static/img/trust.png"
+							src="images/trust.png"
 							alt="trust"
 						>
 					</section>
@@ -567,12 +579,16 @@ export default helloWorld;
 				<section>
 					<h1>End</h1>
 				</section>
+
 			</div>
+
 		</div>
 
-		<script src="vendor/lib/js/head.min.js"></script>
-		<script src="vendor/js/reveal.js"></script>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
 		<script>
+
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -580,37 +596,23 @@ export default helloWorld;
 				progress: true,
 				history: true,
 				center: true,
+
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
 				// Optional reveal.js plugins
 				dependencies: [
-					{
-						src: 'vendor/lib/js/classList.js',
-						condition: function() { return !document.body.classList; }
-					},
-					{
-						src: 'vendor/plugin/markdown/marked.js',
-						condition: function() { return !!document.querySelector( '[data-markdown]' ); }
-					},
-					{
-						src: 'vendor/plugin/markdown/markdown.js',
-						condition: function() { return !!document.querySelector( '[data-markdown]' ); }
-					},
-					{
-						src: 'vendor/plugin/highlight/highlight.js',
-						async: true,
-						condition: function() { return !!document.querySelector( 'pre code' ); },
-						callback: function() { hljs.initHighlightingOnLoad(); }
-					},
-					{
-						src: 'vendor/plugin/zoom-js/zoom.js',
-						async: true
-					},
-					{
-						src: 'vendor/plugin/notes/notes.js',
-						async: true
-					}
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+	        { src: 'socket.io/socket.io.js', async: true },
+	        { src: 'plugin/notes-server/client.js', async: true }
 				]
 			});
+
 		</script>
+
 	</body>
 </html>
