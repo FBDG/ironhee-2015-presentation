@@ -50,71 +50,102 @@
 					<p>
 						<small>Created by <a href="https://github.com/ironhee">Ironhee</a></small>
 					</p>
+
+          <aside class="notes">
+            안녕하세요 발표자 Ironhee(이철희) 라고 합니다.<br/>
+            이번 시간에는 React 사용 사례에 대해서 이야기 해보려 합니다.<br/>
+          </aside>
 				</section>
 
 				<section>
 					<section>
-						<h2>Ediket</h2>
+						<h2>
+              Ediket
+            </h2>
 						<img
 							width="800"
 							data-src="images/ediket-1.png"
 						>
+            <p>
+              <small><a href="https://ediket.com">https://ediket.com</a></small>
+            </p>
+
+            <aside class="notes">
+              기술적인 내용을 이야기하기 전에, 저가 다니고 있는 스타트업에 대해 간단하게 소개드리겠습니다.<br/>
+            </aside>
 					</section>
-					<section>
-						<img
-							width="800"
-							data-src="images/ediket-2.png"
-						>
-					</section>
-					<section>
-						<img
-							width="800"
-							data-src="images/ediket-3.png"
-						>
-					</section>
-					<section>
-						<img
-							width="800"
-							data-src="images/ediket-4.png"
-						>
-					</section>
+          <section>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/VmecBGESBzw"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+
+            <aside class="notes">
+              Ediket은 영어 첨삭이 필요한 고객과 첨삭이 가능한 원어민 에디터를 연결해주는 온라인 첨삭 플랫폼입니다.<br/>
+              Ediket이 제공하는 기능들에 대해서 간단한 동영상을 보여드리겠습니다.<br/>
+            </aside>
+          </section>
 				</section>
 
 				<section>
 					<section>
 						<h2>상황</h2>
+
+            <aside class="notes">
+              먼저 저희 개발팀의 상황을 짚고 넘어가보겠습니다.
+            </aside>
 					</section>
 					<section>
 						<h3>
 							구현로직
 						</h3>
-						<p class="fragment">
-							<strong>Frontend</strong> > Backend
-						</p>
-					</section>
-					<section>
-						<h3>
-							개발 사이클
-						</h3>
-						<p class="fragment">
-							<strong>단기</strong> > 장기
-						</p>
+						<div class="fragment">
+              <img src="https://pbs.twimg.com/media/CBj8nvsUIAA_je3.png" alt="">
+							<p>Backend < <strong>Frontend</strong></p>
+						</div>
+
+            <aside class="notes">
+              저희 서비스의 구현로직은 프론트엔드 작업에 집중된 형태입니다.<br/>
+              예를들자면<br/>
+            </aside>
 					</section>
 					<section>
 						<h3>
 							스타트업
 						</h3>
-						<p class="fragment">
-							잦은 기획의 <strong>변경</strong>
-						</p>
+            <div class="fragment">
+              <img
+                src="http://blogs-images.forbes.com/rodgerdeanduncan/files/2014/07/leanstartup.jpg"
+                alt="lean"
+                width="400"
+              >
+              <p>잦은 기획의 <strong>변경</strong></p>
+            </div>
 					</section>
 					<section>
 						<h3>
 							개발팀
 						</h3>
-						<p class="fragment">
-							3명
-						</p>
+            <p class="fragment">3명</p>
+					</section>
+					<section>
+						<h3>
+							목표
+						</h3>
+            <div class="fragment">
+              <p>글로벌 플랫폼</p>
+            </div>
+					</section>
+					<section>
+            <h3>
+              <strong class="fragment highlight-yellow">유연</strong>하고<br/>
+              <strong class="fragment highlight-yellow">효율</strong>적이면서<br/>
+              <strong class="fragment highlight-yellow">확장</strong>가능한<br/>
+              개발구조
+            </h3>
 					</section>
 				</section>
 
@@ -126,53 +157,32 @@
 					</section>
 					<section>
 						<img
-							width="200"
+							width="600"
 							src="images/backbone.png"
 							alt="backbone"
 						/>
+            <br>
 						<img
-							width="200"
+							width="300"
 							src="images/marionette.png"
 							alt="marionette"
 						/>
 						<img
-							width="200"
-							src="images/grunt.jpg"
-							alt="grunt"
+							width="300"
+							src="images/handlebars.png"
+							alt="handlebars"
 						/>
-						<img
-							width="200"
-							src="images/requirejs.png"
-							alt="requirejs"
-						/>
-						<img
-							width="200"
-							src="images/flask.jpg"
-							alt="flask"
-						/>
-						<img
-							width="200"
-							src="images/jinja2.png"
-							alt="jinja2"
-						/>
-						<img
-							width="200"
-							src="images/python-babel.png"
-							alt="python-babel"
-						/>
-					</section>
-					<section>
-						<p>
-							좀... 불편합니다
-						</p>
 					</section>
 					<section>
 						<h2>
-							Backbone + Marionette
+							Backbone + Marionette + Handlebars<br>
+              <small>mv*</small>
 						</h2>
+            <p class="fragment">
+							<strong>DOM</strong> 직접 제어
+						</p>
 						<p class="fragment">
 							<strong>View</strong> 복잡함
-							<!-- (DOM 직접 제어) -->
 						</p>
 						<p class="fragment">
 							<strong>가독성</strong> 낮음
@@ -184,9 +194,24 @@
 							<strong>협업</strong> 어려움
 						</p>
 					</section>
+          <section>
+            <img
+              height="650"
+              src="images/backbone-marionette.png"
+              alt=""
+            >
+          </section>
+					<section>
+						<img
+							width="400"
+							src="images/requirejs.png"
+							alt="requirejs"
+						/>
+					</section>
 					<section>
 						<h2>
-							Require.js
+							Require.js<br>
+              <small>Module Loader</small>
 						</h2>
 						<p class="fragment">
 							AMD 전용 코드
@@ -197,6 +222,30 @@
 						<p class="fragment">
 							<strong>복잡함</strong>
 						</p>
+					</section>
+          <section>
+            <img
+              height="650"
+              src="images/requirejs-code.png"
+              alt=""
+            >
+          </section>
+					<section>
+						<img
+							width="400"
+							src="images/flask.jpg"
+							alt="flask"
+						/>
+						<img
+							width="400"
+							src="images/jinja2.png"
+							alt="jinja2"
+						/>
+						<img
+							width="400"
+							src="images/python-babel.png"
+							alt="python-babel"
+						/>
 					</section>
 					<section>
 						<h2>
@@ -217,6 +266,13 @@
 						</p>
 					</section>
 					<section>
+						<img
+							width="400"
+							src="images/flask.jpg"
+							alt="flask"
+						/>
+					</section>
+					<section>
 						<h2>
 							Flask<br>
 							<small>Server-Side Routing</small>
@@ -232,8 +288,16 @@
 						</p>
 					</section>
 					<section>
+						<img
+							width="400"
+							src="images/grunt.jpg"
+							alt="grunt"
+						/>
+					</section>
+					<section>
 						<h2>
-							Grunt
+							Grunt<br>
+              <small>Task Runner</small>
 						</h2>
 						<p class="fragment">
 							더 좋은 대안
@@ -258,49 +322,20 @@
 					</section>
 					<section>
 						<img
-							width="200"
-							src="images/flux.png"
-							alt="flux"
-						/>
-						<img
-							width="200"
-							src="images/babel.png"
-							alt="babel"
-						/>
-						<img
-							width="200"
-							src="images/webpack.png"
-							alt="webpack"
-						/>
-						<img
-							width="200"
-							src="images/react-intl.png"
-							alt="react-intl"
-						/>
-						<img
 							width="400"
 							src="images/react.png"
 							alt="react"
 						/>
 						<img
-							width="400"
-							src="images/nunjucks.png"
-							alt="nunjucks"
-						/>
-						<img
-							width="400"
-							src="images/react-router.png"
-							alt="react-router"
-						/>
-						<img
-							width="400"
-							src="images/react-starter-kit.png"
-							alt="react-starter-kit"
+							width="200"
+							src="images/flux.png"
+							alt="flux"
 						/>
 					</section>
 					<section>
 						<h2 className="fragment">
-							React + Reflux
+							React + Flux(Reflux)<br>
+              <small>mv*</small>
 						</h2>
 						<p class="fragment">
 							<strong>View</strong> 단순함
@@ -315,15 +350,54 @@
 							<strong>협업</strong> 쉬움
 						</p>
 					</section>
+          <section>
+						<img
+							height="400"
+							src="images/webpack.png"
+							alt="webpack"
+						/>
+					</section>
 					<section>
 						<h2>
-							Webpack + Babel
+							Webpack<br>
+              <small>module bundler</small>
+						</h2>
+						<p class="fragment">
+							<code class="hljs javascript">
+<pre>var _ require('lodash');
+
+function helloWorld() {
+  console.log('hello world!');
+}
+
+module.exports = helloWorld;
+</pre>
+							</code>
+						</p>
+						<p class="fragment">
+							<strong>NPM</strong> 생태계
+						</p>
+						<p class="fragment">
+							<strong>Chunk</strong> + <strong>Lazy Loading</strong>
+						</p>
+					</section>
+          <section>
+						<img
+							height="400"
+							src="images/babel.png"
+							alt="babel"
+						/>
+					</section>
+					<section>
+						<h2>
+							Babel<br>
+              <small>JS compiler</small>
 						</h2>
 						<p class="fragment">
 							<code class="hljs javascript">
 <pre>import _ from 'lodash';
 
-function helloWorld() {
+const helloWorld = () => {
   console.log('hello world!');
 }
 
@@ -334,9 +408,23 @@ export default helloWorld;
 						<p class="fragment">
 							<strong>ES6 / ES7</strong>
 						</p>
-						<p class="fragment">
-							Node Module
-						</p>
+					</section>
+          <section>
+						<img
+							width="400"
+							src="images/react.png"
+							alt="react"
+						/>
+						<img
+							width="200"
+							src="images/react-intl.png"
+							alt="react-intl"
+						/>
+						<img
+							width="400"
+							src="images/nunjucks.png"
+							alt="nunjucks"
+						/>
 					</section>
 					<section>
 						<h2>
@@ -344,14 +432,45 @@ export default helloWorld;
 							<small>client-side template</small>
 						</h2>
 						<p class="fragment">
-							프론트 개발자: 프론트 코드를 작성
+							<strong>프론트</strong> 개발자: <strong>프론트</strong> 코드를 작성
 						</p>
 						<p class="fragment">
-							백엔드 개발자: 백엔드 코드를 작성
+              <strong>백엔드</strong> 개발자: <strong>백엔드</strong> 코드를 작성
 						</p>
 						<p class="fragment">
 							<strong>단일 책임 원칙</strong>
 						</p>
+					</section>
+          <section>
+						<img
+							width="400"
+							src="images/nunjucks-code.png"
+							alt="nunjucks-code"
+						/><br>
+						<img
+							width="600"
+							src="images/nunjucks-render-code.png"
+							alt="nunjucks-render-code"
+						/>
+					</section>
+          <section>
+            <img
+							width="300"
+							src="images/react-intl-message.png"
+							alt="react-intl-message"
+						/><br>
+						<img
+							width="500"
+							src="images/react-intl-code.png"
+							alt="react-intl-code"
+						/>
+					</section>
+          <section>
+						<img
+							width="400"
+							src="images/react-router.png"
+							alt="react-router"
+						/>
 					</section>
 					<section>
 						<h2>
@@ -365,23 +484,31 @@ export default helloWorld;
 							역할 분리
 						</p>
 					</section>
+          <section>
+						<img
+							width="600"
+							src="images/react-router-code.png"
+							alt="react-router-code"
+						/>
+					</section>
 					<section>
 						<h2>
-							ES7 Generator
+							ES7 Generator<br>
+              <small>Task runner</small>
 						</h2>
-						<p class="fragment">
-							<img
-								width="400"
-								src="images/react-starter-kit.png"
-								alt="react-starter-kit"
-							/>
-						</p>
 						<p class="fragment">
 							<strong>유연함</strong>
 						</p>
 						<p class="fragment">
 							<strong>단순함</strong>
 						</p>
+					</section>
+          <section>
+						<img
+							width="600"
+							src="images/react-starter-kit.png"
+							alt="react-starter-kit"
+						/>
 					</section>
 				</section>
 
@@ -517,6 +644,20 @@ export default helloWorld;
 					<section>
 						<p>서버와 연동 (REST API)</p>
 					</section>
+					<section>
+            <h3>Web</h3>
+						<p>
+							<a href="http://ironhee.github.io/ironhee-frontend-boilerplate/">
+								http://ironhee.github.io/ironhee-frontend-boilerplate
+							</a>
+						</p>
+            <h3>Source</h3>
+						<p>
+							<a href="https://github.com/ironhee/ironhee-frontend-boilerplate">
+								https://github.com/ironhee/ironhee-frontend-boilerplate
+							</a>
+						</p>
+					</section>
 				</section>
 
 				<section>
@@ -526,16 +667,16 @@ export default helloWorld;
 						</h2>
 					</section>
 					<section>
-						<h3>오로지 프론트엔드</h3>
+						<h3>단순함</h3>
 					</section>
 					<section>
-						<h3>빠른 개발 속도</h3>
+						<h3>유연함</h3>
 					</section>
 					<section>
-						<h3>높은 재사용성</h3>
+						<h3>재사용성</h3>
 					</section>
 					<section>
-						<h3>유연한 구조</h3>
+						<h3>개발속도</h3>
 					</section>
 				</section>
 
@@ -563,22 +704,38 @@ export default helloWorld;
 					</section>
 				</section>
 
-				<section>
-					<section>
-						<h2>
-							Related Links
-						</h2>
-						<p>
-							<a href="https://github.com/ironhee/ironhee-frontend-boilerplate">
-								ironhee-frontend-boilerplate
-							</a>
-						</p>
-					</section>
-				</section>
+        <section>
+          <h2>Thanks to</h2>
+          <img
+            height="200"
+            src="http://postfiles5.naver.net/20150217_292/ediket_1424161276793uxwgM_JPEG/photo_2015-02-17_15-46-31_%282%29.jpg?type=w1"
+            alt=""
+          >
+          <img
+            height="200"
+            src="http://postfiles5.naver.net/20150408_260/ediket_1428461390029iJ44u_JPEG/Inventer_05.jpg?type=w1"
+            alt=""
+          >
+          <img
+            height="200"
+            src="http://postfiles2.naver.net/20150223_257/ediket_1424668794359lGMU1_JPEG/photo_2015-02-23_13-46-31_%282%29.jpg?type=w1"
+            alt=""
+          >
+        </section>
 
 				<section>
 					<h1>End</h1>
 				</section>
+
+        <section>
+          <h2>Event</h2>
+          <p><a href="https://ediket.com/coupon/">https://ediket.com/coupon/</a></p>
+          <img
+            width="500"
+            src="images/ediket-coupon.png"
+            alt=""
+          >
+        </section>
 
 			</div>
 
@@ -597,7 +754,7 @@ export default helloWorld;
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'none', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins
 				dependencies: [
