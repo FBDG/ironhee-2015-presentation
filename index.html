@@ -363,22 +363,66 @@
               <small>module bundler</small>
 						</h2>
 						<p class="fragment">
+							<strong>NPM</strong> 생태계
+						</p>
+						<p class="fragment">
+							<strong>Chunk</strong> + <strong>Lazy Loading</strong>
+						</p>
+						<p class="fragment">
+							<strong>Plugin</strong> + <strong>Loader</strong> <small>(Babel, Sass, postCSS)</small>
+						</p>
+					</section>
+					<section>
+						<p>
 							<code class="hljs javascript">
-<pre>var _ require('lodash');
+<pre>
+var _ = require('lodash');  // load node module
+var path = require('path');  // load built-in module
 
 function helloWorld() {
   console.log('hello world!');
 }
 
-module.exports = helloWorld;
+module.exports = helloWorld;  // export like node module
 </pre>
 							</code>
 						</p>
-						<p class="fragment">
-							<strong>NPM</strong> 생태계
-						</p>
-						<p class="fragment">
-							<strong>Chunk</strong> + <strong>Lazy Loading</strong>
+					</section>
+					<section>
+						<p>
+							<code class="hljs javascript">
+<pre>
+/* webpack.config.js */
+export default {
+  // configs...
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: VERBOSE,
+      },
+    }),
+  ],
+  module: {
+    loaders: [
+      {
+        test: /\.(js|es6)$/,
+        include: path.join(__dirname, '../src'),
+        loaders: [...DEBUG ? ['react-hot'] : [], 'babel'],
+      },
+      {
+        test: /\.scss$/,
+        include: path.join(__dirname, '../src'),
+        loaders: ['style/useable', 'css', 'postcss', 'sass?sourceMap'],
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style/useable', 'css', 'postcss'],
+      },
+    ],
+  },
+};
+</pre>
+							</code>
 						</p>
 					</section>
           <section>
@@ -394,19 +438,67 @@ module.exports = helloWorld;
               <small>JS compiler</small>
 						</h2>
 						<p class="fragment">
+							<strong>ES6 / ES7</strong>
+						</p>
+						<p class="fragment">
+							<strong>JSX</strong>
+						</p>
+					</section>
+					<section>
+						<p>
 							<code class="hljs javascript">
-<pre>import _ from 'lodash';
+<pre>
+import _ from 'lodash';
 
 const helloWorld = () => {
   console.log('hello world!');
 }
 
+const jsx = (
+  <div>
+    <h1>Hello world</h1>
+  </div>
+);
+
 export default helloWorld;
 </pre>
 							</code>
 						</p>
-						<p class="fragment">
-							<strong>ES6 / ES7</strong>
+					</section>
+					<section>
+						<p>
+							<code class="hljs javascript">
+<pre>
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _lodash = require('lodash');
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var helloWorld = function helloWorld() {
+  console.log('hello world!');
+};
+
+var jsx = React.createElement(
+  'div',
+  null,
+  React.createElement(
+    'h1',
+    null,
+    'Hello world'
+  )
+);
+
+exports['default'] = helloWorld;
+module.exports = exports['default'];
+</pre>
+							</code>
 						</p>
 					</section>
           <section>
@@ -478,10 +570,13 @@ export default helloWorld;
 							<small>Client-Side Routing (SPA)</small>
 						</h2>
 						<p class="fragment">
-							성능 UP (Lazy Loading 필요)
+							백엔드라우팅 <strong>의존성</strong> 제거
 						</p>
 						<p class="fragment">
-							역할 분리
+							추가적 Refresh X
+						</p>
+						<p class="fragment">
+							Chunk + Lazy Loading
 						</p>
 					</section>
           <section>
@@ -496,6 +591,9 @@ export default helloWorld;
 							ES7 Generator<br>
               <small>Task runner</small>
 						</h2>
+						<p class="fragment">
+							<strong>Just Javascript</strong>
+						</p>
 						<p class="fragment">
 							<strong>유연함</strong>
 						</p>
