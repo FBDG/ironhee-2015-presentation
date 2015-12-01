@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>React 사용사례 - Ironhee</title>
+		<meta name="description" content="FBDG 2015 Ironhee 발표: React 사용사례">
+		<meta name="author" content="Ironhee">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+			img {
+				vertical-align: top !important;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>React 사용사례</h1>
+					<h3>FBDG 2015</h3>
+					<p>
+						<small>Created by <a href="https://github.com/ironhee">Ironhee</a></small>
+					</p>
+
+          <aside class="notes">
+            안녕하세요 발표자 Ironhee(이철희) 라고 합니다.<br/>
+            이번 시간에는 React 사용 사례에 대해서 이야기 해보려 합니다.<br/>
+          </aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+              Ediket
+            </h2>
+						<img
+							width="800"
+							data-src="images/ediket-1.png"
+						>
+            <p>
+              <small><a href="https://ediket.com">https://ediket.com</a></small>
+            </p>
+
+            <aside class="notes">
+              기술적인 내용을 이야기하기 전에, 저가 다니고 있는 스타트업에 대해 간단하게 소개드리겠습니다.<br/>
+            </aside>
+					</section>
+          <section>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/VmecBGESBzw"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+
+            <aside class="notes">
+              Ediket은 영어 첨삭이 필요한 고객과 첨삭이 가능한 원어민 에디터를 연결해주는 온라인 첨삭 플랫폼입니다.<br/>
+              Ediket이 제공하는 기능들에 대해서 간단한 동영상을 보여드리겠습니다.<br/>
+            </aside>
+          </section>
+				</section>
+
+				<section>
+					<section>
+						<h2>상황</h2>
+
+            <aside class="notes">
+              먼저 저희 개발팀의 상황을 짚고 넘어가보겠습니다.
+            </aside>
+					</section>
+					<section>
+						<h3>
+							구현로직
+						</h3>
+						<div class="fragment">
+              <img src="https://pbs.twimg.com/media/CBj8nvsUIAA_je3.png" alt="">
+							<p>Backend < <strong>Frontend</strong></p>
+						</div>
+
+            <aside class="notes">
+              저희 서비스의 구현로직은 프론트엔드 작업에 집중된 형태입니다.<br/>
+              예를들자면<br/>
+            </aside>
+					</section>
+					<section>
+						<h3>
+							스타트업
+						</h3>
+            <div class="fragment">
+              <img
+                src="http://blogs-images.forbes.com/rodgerdeanduncan/files/2014/07/leanstartup.jpg"
+                alt="lean"
+                width="400"
+              >
+              <p>잦은 기획의 <strong>변경</strong></p>
+            </div>
+					</section>
+					<section>
+						<h3>
+							개발팀
+						</h3>
+            <p class="fragment">3명</p>
+					</section>
+					<section>
+						<h3>
+							목표
+						</h3>
+            <div class="fragment">
+              <p>글로벌 플랫폼</p>
+            </div>
+					</section>
+					<section>
+            <h3>
+              <strong class="fragment highlight-yellow">유연</strong>하고<br/>
+              <strong class="fragment highlight-yellow">효율</strong>적이면서<br/>
+              <strong class="fragment highlight-yellow">확장</strong>가능한<br/>
+              개발구조
+            </h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							기존 개발스택
+						</h2>
+					</section>
+					<section>
+						<img
+							width="600"
+							src="images/backbone.png"
+							alt="backbone"
+						/>
+            <br>
+						<img
+							width="300"
+							src="images/marionette.png"
+							alt="marionette"
+						/>
+						<img
+							width="300"
+							src="images/handlebars.png"
+							alt="handlebars"
+						/>
+					</section>
+					<section>
+						<h2>
+							Backbone + Marionette + Handlebars<br>
+              <small>mv*</small>
+						</h2>
+            <p class="fragment">
+							<strong>DOM</strong> 직접 제어
+						</p>
+						<p class="fragment">
+							<strong>View</strong> 복잡함
+						</p>
+						<p class="fragment">
+							<strong>가독성</strong> 낮음
+						</p>
+						<p class="fragment">
+							<strong>재사용성</strong> 낮음
+						</p>
+						<p class="fragment">
+							<strong>협업</strong> 어려움
+						</p>
+					</section>
+          <section>
+            <img
+              height="650"
+              src="images/backbone-marionette.png"
+              alt=""
+            >
+          </section>
+					<section>
+						<img
+							width="400"
+							src="images/requirejs.png"
+							alt="requirejs"
+						/>
+					</section>
+					<section>
+						<h2>
+							Require.js<br>
+              <small>Module Loader</small>
+						</h2>
+						<p class="fragment">
+							AMD 전용 코드
+						</p>
+						<p class="fragment">
+							Dependencies Hell
+						</p>
+						<p class="fragment">
+							<strong>복잡함</strong>
+						</p>
+					</section>
+          <section>
+            <img
+              height="650"
+              src="images/requirejs-code.png"
+              alt=""
+            >
+          </section>
+					<section>
+						<img
+							width="400"
+							src="images/flask.jpg"
+							alt="flask"
+						/>
+						<img
+							width="400"
+							src="images/jinja2.png"
+							alt="jinja2"
+						/>
+						<img
+							width="400"
+							src="images/python-babel.png"
+							alt="python-babel"
+						/>
+					</section>
+					<section>
+						<h2>
+							Flask + Jinja2 + Babel<br>
+							<small>server-side template</small>
+						</h2>
+						<p class="fragment">
+							<strong>프론트</strong> 개발자: <strong>백엔드</strong> 코드를 작성
+						</p>
+						<p class="fragment">
+							<strong>백엔드</strong> 개발자: <strong>프론트</strong> 코드를 작성
+						</p>
+						<p class="fragment">
+							<strong>Context Switching Cost</strong>
+						</p>
+						<p class="fragment">
+							프론트와 백엔드의 <strong>역할 분리 X</strong>
+						</p>
+					</section>
+					<section>
+						<img
+							width="400"
+							src="images/flask.jpg"
+							alt="flask"
+						/>
+					</section>
+					<section>
+						<h2>
+							Flask<br>
+							<small>Server-Side Routing</small>
+						</h2>
+						<p class="fragment">
+							<strong>프론트</strong> 개발자: <strong>백엔드</strong>의 구현에 의존
+						</p>
+						<p class="fragment">
+							팀의 핵심역량 = 프론트
+						</p>
+						<p class="fragment">
+							<strong>Client-Side Routing</strong> 필요
+						</p>
+					</section>
+					<section>
+						<img
+							width="400"
+							src="images/grunt.jpg"
+							alt="grunt"
+						/>
+					</section>
+					<section>
+						<h2>
+							Grunt<br>
+              <small>Task Runner</small>
+						</h2>
+						<p class="fragment">
+							더 좋은 대안
+						</p>
+						<p class="fragment">
+							<strong>Gulp</strong>
+						</p>
+						<p class="fragment">
+							<strong>NPM scripts</strong>
+						</p>
+						<p class="fragment">
+							<strong>ES7 Generator</strong>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							현재 개발 스택
+						</h2>
+					</section>
+					<section>
+						<img
+							width="400"
+							src="images/react.png"
+							alt="react"
+						/>
+						<img
+							width="200"
+							src="images/flux.png"
+							alt="flux"
+						/>
+					</section>
+					<section>
+						<h2 className="fragment">
+							React + Flux(Reflux)<br>
+              <small>mv*</small>
+						</h2>
+						<p class="fragment">
+							<strong>View</strong> 단순함
+						</p>
+						<p class="fragment">
+							<strong>가독성</strong> 높음
+						</p>
+						<p class="fragment">
+							<strong>재사용성</strong> 높음
+						</p>
+						<p class="fragment">
+							<strong>협업</strong> 쉬움
+						</p>
+					</section>
+          <section>
+						<img
+							height="400"
+							src="images/webpack.png"
+							alt="webpack"
+						/>
+					</section>
+					<section>
+						<h2>
+							Webpack<br>
+              <small>module bundler</small>
+						</h2>
+						<p class="fragment">
+							<strong>NPM</strong> 생태계
+						</p>
+						<p class="fragment">
+							<strong>Chunk</strong> + <strong>Lazy Loading</strong>
+						</p>
+						<p class="fragment">
+							<strong>Plugin</strong> + <strong>Loader</strong> <small>(Babel, Sass, postCSS)</small>
+						</p>
+					</section>
+					<section>
+						<p>
+							<code class="hljs javascript">
+<pre>
+var _ = require('lodash');  // load node module
+var path = require('path');  // load built-in module
+
+function helloWorld() {
+  console.log('hello world!');
+}
+
+module.exports = helloWorld;  // export like node module
+</pre>
+							</code>
+						</p>
+					</section>
+					<section>
+						<p>
+							<code class="hljs javascript">
+<pre>
+/* webpack.config.js */
+export default {
+  // configs...
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: VERBOSE,
+      },
+    }),
+  ],
+  module: {
+    loaders: [
+      {
+        test: /\.(js|es6)$/,
+        include: path.join(__dirname, '../src'),
+        loaders: [...DEBUG ? ['react-hot'] : [], 'babel'],
+      },
+      {
+        test: /\.scss$/,
+        include: path.join(__dirname, '../src'),
+        loaders: ['style/useable', 'css', 'postcss', 'sass?sourceMap'],
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style/useable', 'css', 'postcss'],
+      },
+    ],
+  },
+};
+</pre>
+							</code>
+						</p>
+					</section>
+          <section>
+						<img
+							height="400"
+							src="images/babel.png"
+							alt="babel"
+						/>
+					</section>
+					<section>
+						<h2>
+							Babel<br>
+              <small>JS compiler</small>
+						</h2>
+						<p class="fragment">
+							<strong>ES6 / ES7</strong>
+						</p>
+						<p class="fragment">
+							<strong>JSX</strong>
+						</p>
+					</section>
+					<section>
+						<p>
+							<code class="hljs javascript">
+<pre>
+import _ from 'lodash';
+
+const helloWorld = () => {
+  console.log('hello world!');
+}
+
+const jsx = (
+  <div>
+    <h1>Hello world</h1>
+  </div>
+);
+
+export default helloWorld;
+</pre>
+							</code>
+						</p>
+					</section>
+					<section>
+						<p>
+							<code class="hljs javascript">
+<pre>
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _lodash = require('lodash');
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var helloWorld = function helloWorld() {
+  console.log('hello world!');
+};
+
+var jsx = React.createElement(
+  'div',
+  null,
+  React.createElement(
+    'h1',
+    null,
+    'Hello world'
+  )
+);
+
+exports['default'] = helloWorld;
+module.exports = exports['default'];
+</pre>
+							</code>
+						</p>
+					</section>
+          <section>
+						<img
+							width="400"
+							src="images/react.png"
+							alt="react"
+						/>
+						<img
+							width="200"
+							src="images/react-intl.png"
+							alt="react-intl"
+						/>
+						<img
+							width="400"
+							src="images/nunjucks.png"
+							alt="nunjucks"
+						/>
+					</section>
+					<section>
+						<h2>
+							React + React-Intl + Nunjucks<br>
+							<small>client-side template</small>
+						</h2>
+						<p class="fragment">
+							<strong>프론트</strong> 개발자: <strong>프론트</strong> 코드를 작성
+						</p>
+						<p class="fragment">
+              <strong>백엔드</strong> 개발자: <strong>백엔드</strong> 코드를 작성
+						</p>
+						<p class="fragment">
+							<strong>단일 책임 원칙</strong>
+						</p>
+					</section>
+          <section>
+						<img
+							width="400"
+							src="images/nunjucks-code.png"
+							alt="nunjucks-code"
+						/><br>
+						<img
+							width="600"
+							src="images/nunjucks-render-code.png"
+							alt="nunjucks-render-code"
+						/>
+					</section>
+          <section>
+            <img
+							width="300"
+							src="images/react-intl-message.png"
+							alt="react-intl-message"
+						/><br>
+						<img
+							width="500"
+							src="images/react-intl-code.png"
+							alt="react-intl-code"
+						/>
+					</section>
+          <section>
+						<img
+							width="400"
+							src="images/react-router.png"
+							alt="react-router"
+						/>
+					</section>
+					<section>
+						<h2>
+							React-Router<br>
+							<small>Client-Side Routing (SPA)</small>
+						</h2>
+						<p class="fragment">
+							백엔드라우팅 <strong>의존성</strong> 제거
+						</p>
+						<p class="fragment">
+							추가적 Refresh X
+						</p>
+						<p class="fragment">
+							Chunk + Lazy Loading
+						</p>
+					</section>
+          <section>
+						<img
+							width="600"
+							src="images/react-router-code.png"
+							alt="react-router-code"
+						/>
+					</section>
+					<section>
+						<h2>
+							ES7 Generator<br>
+              <small>Task runner</small>
+						</h2>
+						<p class="fragment">
+							<strong>Just Javascript</strong>
+						</p>
+						<p class="fragment">
+							<strong>유연함</strong>
+						</p>
+						<p class="fragment">
+							<strong>단순함</strong>
+						</p>
+					</section>
+          <section>
+						<img
+							width="600"
+							src="images/react-starter-kit.png"
+							alt="react-starter-kit"
+						/>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							개발 시나리오
+						</h2>
+					</section>
+					<section>
+						<p>'쿠폰 생성 페이지가 필요해요!'</p>
+					</section>
+					<section>
+						<p>Run Webpack Devserver</p>
+						<img
+							width="600"
+							src="images/npm-run-serve.png"
+							alt="npm-run-serve"
+						/>
+					</section>
+					<section>
+						<p>Dummy Component 작성</p>
+						<img
+							width="900"
+							src="images/react-couponpage.png"
+							alt="react-couponpage"
+						/>
+					</section>
+					<section>
+						<p>Router 에 Component 추가</p>
+						<img
+							width="800"
+							src="images/router-code.png"
+							alt="router-code"
+						/>
+					</section>
+					<section>
+						<p>Header 에 CouponPage Link 추가</p>
+						<img
+							width="550"
+							src="images/topbar-code.png"
+							alt="topbar-code"
+						/>
+					</section>
+					<section>
+						<p>Browser 에서 구현 확인</p>
+						<img
+							width="550"
+							src="images/couponpage-dummy-web.gif"
+							alt="couponpage-dummy-web"
+						/>
+					</section>
+					<section>
+						<p>Component UI 구현</p>
+						<img
+							width="400"
+							src="images/coupon-ui-code.png"
+							alt="coupon-ui-code"
+						/>
+						<img
+							width="300"
+							src="images/coupon-ui-web.gif"
+							alt="coupon-ui-web"
+						/>
+					</section>
+					<section>
+						<p>Style 적용</p>
+						<img
+							width="400"
+							src="images/coupon-style-scss.png"
+							alt="coupon-style-scss"
+						/>
+						<img
+							width="400"
+							src="images/coupon-style-web.png"
+							alt="coupon-style-web"
+						/>
+						<img
+							width="400"
+							src="images/coupon-style.png"
+							alt="coupon-style"
+						/>
+					</section>
+					<section>
+						<p>Store 및 Action 구현</p>
+						<img
+							width="400"
+							src="images/store-code.png"
+							alt="store-code"
+						/>
+						<img
+							width="400"
+							src="images/coupon-reducer-code.png"
+							alt="coupon-reducer-code"
+						/>
+						<img
+							width="400"
+							src="images/coupon-action-code.png"
+							alt="coupon-action-code"
+						/>
+					</section>
+					<section>
+						<p>Component 에서 Store &amp; Action 이용하도록 변경</p>
+						<img
+							width="400"
+							src="images/coupon-ui-code.png"
+							alt="coupon-ui-code"
+						/>
+						=>
+						<img
+							width="400"
+							src="images/coupon-page-use-redux-code.png"
+							alt="coupon-page-use-redux-code"
+						/>
+					</section>
+					<section>
+						<p>Browser 에서 구현 확인</p>
+						<img
+							width="400"
+							src="images/coupon-ui-web.gif"
+							alt="coupon-ui-web"
+						/>
+						=>
+						<img
+							width="400"
+							src="images/coupon-use-redux-web.gif"
+							alt="coupon-use-redux-web"
+						/>
+					</section>
+					<section>
+						<p>다국어 (Intl) 적용</p>
+					</section>
+					<section>
+						<p>서버와 연동 (REST API)</p>
+					</section>
+					<section>
+            <h3>Web</h3>
+						<p>
+							<a href="http://ironhee.github.io/ironhee-frontend-boilerplate/">
+								http://ironhee.github.io/ironhee-frontend-boilerplate
+							</a>
+						</p>
+            <h3>Source</h3>
+						<p>
+							<a href="https://github.com/ironhee/ironhee-frontend-boilerplate">
+								https://github.com/ironhee/ironhee-frontend-boilerplate
+							</a>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							얻게된 것
+						</h2>
+					</section>
+					<section>
+						<h3>단순함</h3>
+					</section>
+					<section>
+						<h3>유연함</h3>
+					</section>
+					<section>
+						<h3>재사용성</h3>
+					</section>
+					<section>
+						<h3>개발속도</h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							가장 중요한 것
+						</h2>
+					</section>
+					<section>
+						<h3>소통</h3>
+						<img
+							width="600"
+							src="images/communication.jpg"
+							alt="communication"
+						>
+					</section>
+					<section>
+						<h3>신뢰</h3>
+						<img
+							width="600"
+							src="images/trust.png"
+							alt="trust"
+						>
+					</section>
+				</section>
+
+        <section>
+          <h2>Thanks to</h2>
+          <img
+            height="200"
+            src="images/ironhee.jpg"
+            alt=""
+          >
+          <img
+            height="200"
+            src="images/jw.jpg"
+            alt=""
+          >
+          <img
+            height="200"
+            src="images/jsd.jpg"
+            alt=""
+          >
+        </section>
+
+				<section>
+					<h1>End</h1>
+				</section>
+
+        <section>
+          <h2>Event</h2>
+          <p><a href="https://ediket.com/coupon/">https://ediket.com/coupon/</a></p>
+          <img
+            width="500"
+            src="images/ediket-coupon.png"
+            alt=""
+          >
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+	        { src: 'socket.io/socket.io.js', async: true },
+	        { src: 'plugin/notes-server/client.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
